@@ -4,6 +4,8 @@ A simple and responsive MusicPlayer-Bootstrap-JQuery web application developed w
 This player
 supports various features like seek, next, previous, stop, play, loading, and favouring songs.
 
+<img src="https://github.com/Mohammadshekari/MusicPlayer-Bootstrap-JQuery/blob/main/screenshots/index.jpg?raw=true" width="600">
+
 ## Demo
 
 Check out the live demo [here](https://mohammadshekari.github.io/MusicPlayer-Bootstrap-JQuery/index.html).
