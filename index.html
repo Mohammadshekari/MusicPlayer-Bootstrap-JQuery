@@ -7,12 +7,264 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>MusicPlayer with Bootstrap & JQuery</title>
 	<meta name="author" content="BadiDesign.ir">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/player.css" rel="stylesheet">
+	<link href="css/dark.css" rel="stylesheet">
+	<link href="css/loading.css" rel="stylesheet">
 	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap/bootstrap-icons.min.css">
 
 </head>
 <body class="dark">
+<div class="container my-5">
+	<div class="card card-custom rounded ">
+		<div class="card-header">
+			<div class="card-title mt-3 mb-3">
+				<div class="d-flex px-2 justify-content-between align-items-center">
+					<div>
+						<div class="mb-1">
+							<a target="_blank"
+							   class="fw-bolder  link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+							   href="https://www.linkedin.com/in/mohammad-shekari-badi/">
+								Mohammad Shekari badi
+							</a>
+						</div>
+						<div>
+							MusicPlayer with Bootstrap & JQuery
+						</div>
+					</div>
+					<div class="d-none d-sm-block">
+						<a target="_blank" href="https://badidesign.ir/contact/">Contact Me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="app-player" class="ltr w-100 d-block d-md-flex px-0 min-h-500px">
+		<main class="player-box bg-radial card card-custom m-auto">
+			<section class="player">
+				<div class="spinner">
+					<div class="spinnerin"></div>
+				</div>
+				<div class="cover-wrapper">
+					<img class="cover" src="https://mifamusic.ir/media/uploads/2024/05/Ehaam_-_Bezan_Tabar_nVkpt7c.webp"
+						 alt="Throw an ax">
+				</div>
+				<div class="song-details">
+					<h2 class="song-title">
+						Throw an ax
+					</h2>
+					<p class="artist">Eham</p>
+					<div class="progress-bar-box cursor-pointer seek">
+						<div class="progress-bar-wrapper" style="width: 0;"></div>
+					</div>
+					<div class="timer">
+						<p class="start mb-0">0:00</p>
+						<p class="end mb-0"></p>
+					</div>
+				</div>
+				<div class="controls">
+					<button class="prev">
+						<i class="bi bi-caret-left-fill"></i>
+					</button>
+					<button class="play bg-primary">
+						<i class="bi text-dark bi-play-fill"></i>
+					</button>
+					<button class="pause bg-primary d-none">
+						<i class="bi text-white bi-pause"></i>
+					</button>
+					<button class="next">
+						<i class="bi bi-caret-right-fill"></i>
+					</button>
+				</div>
+			</section>
+		</main>
+		<section class="playlist bg-radial card card-custom d-block w-100 mx-1 py-5 my-3 scroll-xs">
+			<ul class="mx-0 p-0">
+
+				<li class="song">
+					<div class="play-btn cursor-pointer d-flex w-100" data-id="10342"
+						 data-url="https://dl1.mifamusic.ir/Music/1403/03/10/Ehaam%20-%20Bezan%20Tabar.mp3"
+						 data-cover="https://mifamusic.ir/media/uploads/2024/05/Ehaam_-_Bezan_Tabar_nVkpt7c.webp"
+						 data-name="Throw an ax"
+						 data-artist="ایهام">
+						<div class="cover-playlist">
+							<img class="cover"
+								 src="https://mifamusic.ir/media/uploads/2024/05/Ehaam_-_Bezan_Tabar_BTqVSa7.webp"
+								 alt="Throw an ax">
+						</div>
+						<div class="details justify-content-center">
+							<h2 class="song-title">
+								Throw an ax
+							</h2>
+							<p class="artist">Iham</p>
+							<div class="player" style="linear-gradient(45deg,#df83f1, #82279f, #53cfe0)"></div>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://dl1.mifamusic.ir/Music/1403/03/10/Ehaam%20-%20Bezan%20Tabar.mp3" download=""
+						   target="_blank" class="delete text-hover-primary mx-1 px-2 text-muted">
+							<i class="bi bi-xs bi-download"></i>
+						</a>
+						<button class="delete trigger-fav mx-1" data-id="10342">
+							<i class="bi bi-xs bi-heart-fill text-muted"></i>
+						</button>
+					</div>
+				</li>
+
+				<li class="song">
+					<div class="play-btn cursor-pointer d-flex w-100" data-id="10337"
+						 data-url="https://dl1.mifamusic.ir/Music/1403/03/09/Hamid%20Askari%20Mosaken.mp3"
+						 data-cover="https://mifamusic.ir/media/uploads/2024/05/Hamid_Askari_Mosake_bUzAbAj.webp"
+						 data-name="Mosaken"
+						 data-artist="حمید عسکری">
+						<div class="cover-playlist">
+							<img class="cover"
+								 src="https://mifamusic.ir/media/uploads/2024/05/Hamid_Askari_Mosake_txmmiJH.webp"
+								 alt="Housing">
+						</div>
+						<div class="details justify-content-center">
+							<h2 class="song-title">
+								Housing
+							</h2>
+							<p class="artist">Hamid Askari</p>
+							<div class="player" style="linear-gradient(45deg,#df83f1, #82279f, #53cfe0)"></div>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://dl1.mifamusic.ir/Music/1403/03/09/Hamid%20Askari%20Mosaken.mp3" download=""
+						   target="_blank" class="delete text-hover-primary mx-1 px-2 text-muted">
+							<i class="bi bi-xs bi-download"></i>
+						</a>
+						<button class="delete trigger-fav mx-1" data-id="10337">
+							<i class="bi bi-xs bi-heart-fill text-muted"></i>
+						</button>
+					</div>
+				</li>
+
+				<li class="song">
+					<div class="play-btn cursor-pointer d-flex w-100" data-id="10226"
+						 data-url="https://dl1.mifamusic.ir/Music/1403/03/05/Hamid%20Talebzadeh%20Negaram.mp3"
+						 data-cover="https://mifamusic.ir/media/uploads/2024/05/hamid_talebzadeh_ne_sxzb4SO.webp"
+						 data-name="Negaram"
+						 data-artist="Hamid TalebZade">
+						<div class="cover-playlist">
+							<img class="cover"
+								 src="https://mifamusic.ir/media/uploads/2024/05/hamid_talebzadeh_ne_rNcsepS.webp"
+								 alt="my writing">
+						</div>
+						<div class="details justify-content-center">
+							<h2 class="song-title">
+								My writing
+							</h2>
+							<p class="artist">Hamid TalebZade</p>
+							<div class="player" style="linear-gradient(45deg,#df83f1, #82279f, #53cfe0)"></div>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://dl1.mifamusic.ir/Music/1403/03/05/Hamid%20Talebzadeh%20Negaram.mp3" download=""
+						   target="_blank" class="delete text-hover-primary mx-1 px-2 text-muted">
+							<i class="bi bi-xs bi-download"></i>
+						</a>
+						<button class="delete trigger-fav mx-1" data-id="10226">
+							<i class="bi bi-xs bi-heart-fill text-muted"></i>
+						</button>
+					</div>
+				</li>
+
+				<li class="song">
+					<div class="play-btn cursor-pointer d-flex w-100" data-id="10099"
+						 data-url="https://dl1.mifamusic.ir/Music/1403/02/31/MOhsen%20Chavoshi%20Cheshmeye%20Toosi%20%28Remix%29.mp3"
+						 data-cover="https://mifamusic.ir/media/uploads/2024/05/MOhsen_Chavoshi_Cheshmeye_Toosi_Remix_9fnM8Tj.webp"
+						 data-name="Remix of Chashme Tosi" data-artist="محسن چاوشی">
+						<div class="cover-playlist">
+							<img class="cover"
+								 src="https://mifamusic.ir/media/uploads/2024/05/MOhsen_Chavoshi_Cheshmeye_Toosi_Remix_3OSStCb.webp"
+								 alt="Remix of Chashme Tosi">
+						</div>
+						<div class="details justify-content-center">
+							<h2 class="song-title">
+								Remix of Chashme Tosi
+							</h2>
+							<p class="artist">Mohsen chavoshi</p>
+							<div class="player" style="linear-gradient(45deg,#df83f1, #82279f, #53cfe0)"></div>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://dl1.mifamusic.ir/Music/1403/02/31/MOhsen%20Chavoshi%20Cheshmeye%20Toosi%20%28Remix%29.mp3"
+						   download="" target="_blank" class="delete text-hover-primary mx-1 px-2 text-muted">
+							<i class="bi bi-xs bi-download"></i>
+						</a>
+						<button class="delete trigger-fav mx-1" data-id="10099">
+							<i class="bi bi-xs bi-heart-fill text-muted"></i>
+						</button>
+					</div>
+				</li>
+
+				<li class="song">
+					<div class="play-btn cursor-pointer d-flex w-100" data-id="10076"
+						 data-url="https://dl1.mifamusic.ir/Music/1403/02/29/Kasra%20Zahed%20Behtarin%20Eshtebah%20%28Remix%29.mp3"
+						 data-cover="https://mifamusic.ir/media/uploads/2024/05/Kasra_Zahed_Behtarin_Eshtebah_Remi_3PAc1oJ.webp"
+						 data-name="The best mistake remix" data-artist="Kasri Zahedi">
+						<div class="cover-playlist">
+							<img class="cover"
+								 src="https://mifamusic.ir/media/uploads/2024/05/Kasra_Zahed_Behtarin_Eshtebah_Remi_8veSweL.webp"
+								 alt="The best mistake remix">
+						</div>
+						<div class="details justify-content-center">
+							<h2 class="song-title">
+								The best mistake remix
+							</h2>
+							<p class="artist">Kasri Zahedi</p>
+							<div class="player" style="linear-gradient(45deg,#df83f1, #82279f, #53cfe0)"></div>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://dl1.mifamusic.ir/Music/1403/02/29/Kasra%20Zahed%20Behtarin%20Eshtebah%20%28Remix%29.mp3"
+						   download="" target="_blank" class="delete text-hover-primary mx-1 px-2 text-muted">
+							<i class="bi bi-xs bi-download"></i>
+						</a>
+						<button class="delete trigger-fav mx-1" data-id="10076">
+							<i class="bi bi-xs bi-heart-fill text-muted"></i>
+						</button>
+					</div>
+				</li>
+
+				<li class="song">
+					<div class="play-btn cursor-pointer d-flex w-100" data-id="9849"
+						 data-url="https://dl1.mifamusic.ir/Music/1403/02/21/Hossein%20Zaman%20Nemishe%20Nabashi.mp3"
+						 data-cover="https://mifamusic.ir/media/uploads/2024/05/hossein_zaan_nemishe_nabashi_JxHZBML.webp"
+						 data-name="You can't be" data-artist="Hossein Zaman">
+						<div class="cover-playlist">
+							<img class="cover"
+								 src="https://mifamusic.ir/media/uploads/2024/05/hossein_zaan_nemishe_nabashi_s9gA2KU.webp"
+								 alt="You can't be">
+						</div>
+						<div class="details justify-content-center">
+							<h2 class="song-title">
+								You can't be
+							</h2>
+							<p class="artist">Hossein Zaman</p>
+							<div class="player" style="linear-gradient(45deg,#df83f1, #82279f, #53cfe0)"></div>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://dl1.mifamusic.ir/Music/1403/02/21/Hossein%20Zaman%20Nemishe%20Nabashi.mp3"
+						   download="" target="_blank" class="delete text-hover-primary mx-1 px-2 text-muted">
+							<i class="bi bi-xs bi-download"></i>
+						</a>
+						<button class="delete trigger-fav mx-1" data-id="9849">
+							<i class="bi bi-xs bi-heart-fill text-muted"></i>
+						</button>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+</div>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/musicplayer.js"></script>
 </body>
 </html>

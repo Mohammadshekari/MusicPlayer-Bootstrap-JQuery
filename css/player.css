@@ -1,0 +1,224 @@
+@media (min-width: 768px) {
+    #app-player .player-box {
+        max-width: 320px;
+    }
+}
+
+#app-player .player-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: var(--hover-primary);
+    border-radius: 15px;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.player-box button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#app-player button:not(.btn):hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+#app-player#app-player .song-details {
+    margin-top: 20px;
+}
+
+#app-player .cover-playlist {
+    height: 50px;
+    width: 50px;
+}
+
+#app-player .cover-wrapper {
+    width: 100%;
+    height: 270px;
+    text-align: center;
+}
+
+#app-player .animated {
+    animation: appear-smoothly 1s normal both;
+    transition: all 0.3s;
+}
+
+#app-player .cover {
+    height: 100%;
+    width: 270px;
+    box-shadow: 0 24px 35px -16px rgb(237 234 107 / 15%);
+    border-radius: 15px;
+}
+
+#app-player .cover-playlist > .cover {
+    margin-right: 15px;
+    width: 50px;
+}
+
+#app-player .song-title {
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#app-player .artist {
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+
+#app-player .details {
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#app-player .details > .song-title {
+    font-size: inherit;
+    text-align: left;
+}
+
+#app-player .details > .artist {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#app-player .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-player .play, #app-player .pause {
+    background: var(--warning);
+    border: 1px solid var(--black-2);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#app-player .next, #app-player .prev {
+    border-radius: 50%;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: var(--hover-primary);
+    border: 1px solid var(--black-2);
+    color: #fff;
+    transition: background-color .2s;
+    position: relative;
+}
+
+#app-player .playlist {
+    overflow-y: auto;
+    max-height: 500px;
+    border-radius: 15px;
+}
+
+#app-player .playlist h3 {
+    color: #212121;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#app-player .playlist .song {
+    display: flex;
+    align-items: center;
+    padding: 7px 10px 5px 10px;
+    border-bottom: 1px solid var(--black);
+}
+
+#app-player .actions {
+    display: flex;
+}
+
+#app-player .actions > .delete {
+    border-radius: 50%;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+}
+
+#app-player .playlist .song:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    transition: box-shadow .2s, background-color .3s;
+}
+
+#app-player .timer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#app-player .k-progress-outer {
+    margin-top: 15px !important;
+    padding-right: 0 !important;
+}
+
+#app-player {
+    padding: 20px;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    #app-player {
+        grid-template-columns: 1fr;
+    }
+
+    #app-player .playlist {
+        max-height: 500px;
+    }
+}
+
+#app-player .progress-bar-wrapper {
+    height: 5px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #df83f1, #82279f, #53cfe0) !important;
+}
+
+#app-player .progress-bar-box {
+    height: 5px;
+    border-bottom: 1px solid var(--black-2);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+#app-player .loading > form, #app-player .loading > div:not(.precustom-loader), #app-player .loading > table {
+    opacity: 0.5;
+}
+
+#app-player .custom-loader:before {
+    border-top-color: var(--white);
+}
+
+#app-player .text-muted {
+    --bs-text-opacity: 1;
+    color: var(--white-75) !important;
+}

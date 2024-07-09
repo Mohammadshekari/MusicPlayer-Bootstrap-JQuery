@@ -1,0 +1,343 @@
+:root {
+    --black-5: #BDBDBD;
+    --black-4: #757575;
+    --black-3: #616161;
+    --black-2: #424242;
+    --black-1: #212121;
+    --black: #151515;
+    --white: #fff;
+    --white-75: #b5b5c3;
+    --warning: #fdbc12;
+    --sec-primary: #ffeedd;
+    --trans-primary: rgba(160, 122, 201, 0.1);
+}
+
+body.dark #kt_aside {
+    background: var(--black);
+}
+
+body.dark {
+    background: linear-gradient(90deg, var(--black), var(--black-1), var(--black));
+}
+
+body.dark .bg-dark-4 {
+    background: var(--black-4) !important;
+}
+
+body.dark .bg-dark-3 {
+    background: var(--black-3) !important;
+}
+
+body.dark .bg-dark-2 {
+    background: var(--black-2) !important;
+}
+
+body.dark .bg-dark-1 {
+    background: var(--black-1) !important;
+}
+
+body.dark .bg-dark {
+    background: var(--black) !important;
+}
+
+body.dark .card {
+    color: #fff;
+    background: var(--black);
+    transition: 0.3s all;
+}
+
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+    background-color: var(--hover-primary) !important;
+    border-color: var(--hover-primary) !important;
+}
+
+body.dark .btn-dark {
+    color: #fff;
+    background-color: var(--black) !important;
+    border-color: var(--black) !important;
+}
+
+body.dark .border-dark {
+    border-color: var(--black-1) !important;
+}
+
+body.dark .btn-dark:hover {
+    color: #fff;
+    background-color: var(--black-1) !important;
+    border-color: var(--black-1) !important;
+}
+
+.text-black {
+    color: var(--black) !important;
+}
+
+body.dark .card.card-custom {
+    border: 1px solid transparent;
+    box-shadow: none;
+}
+
+body.dark .card.card-custom.hover:hover {
+    border: 1px solid var(--primary);
+}
+
+
+body.dark .card.card-custom.hover-white:hover {
+    border: 1px solid #fff;
+}
+
+body.dark .card.card-custom.hover-dark:hover {
+    border: 1px solid var(--black-1);
+}
+
+
+body.dark .card .card-title {
+    color: #fff !important;
+}
+
+
+body.dark .text-dark-75, body.dark {
+    color: var(--white-75) !important;
+}
+
+body.dark .table {
+    color: var(--white) !important;
+}
+
+body.dark .modal .modal-header .modal-title {
+    color: var(--white) !important;
+}
+
+body.dark .select2-container--default .select2-dropdown {
+    color: var(--white) !important;
+}
+
+body.dark .table-striped tbody tr:nth-of-type(even) {
+    background: var(--black-1) !important;
+}
+
+body.dark .select2-dropdown {
+    background: var(--black-2) !important;
+}
+
+body.dark .select2-container--default .select2-results__option[aria-selected=true] {
+    background: var(--black-1) !important;
+    color: var(--white) !important;
+}
+
+body.dark .dropdown-menu {
+    background: var(--black-2) !important;
+    color: var(--white) !important;
+}
+
+body.dark .text-dark {
+    color: var(--white) !important;
+}
+
+body.dark .swal2-popup {
+    background: var(--black-2);
+    color: var(--white-75);
+}
+
+body.dark .swal2-popup .swal2-title {
+    color: var(--white);
+}
+
+body.dark .border-secondary {
+    border-color: var(--black-2) !important;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
+    color: var(--white);
+}
+
+body.dark .offcanvas {
+    background: var(--black-1);
+}
+
+body.dark .symbol .symbol-label {
+    background: var(--black-2);
+}
+
+body.dark .dropdown-item {
+    color: var(--white);
+}
+
+body.dark .nav-item .dropdown-item:not(.active) i {
+    color: var(--white-75);
+}
+
+body.dark .dropdown-item:focus, body.dark .dropdown-item:hover {
+    background: var(--black-1);
+}
+
+body.dark input {
+    border: 1px solid var(--black-2);
+    background-color: var(--black-1);
+    color: var(--white-75);
+}
+
+body.dark .select2-container--default .select2-selection--single {
+    border: 1px solid var(--black-2);
+    background-color: var(--black-1);
+    color: var(--white-75);
+}
+
+body.dark .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: var(--white-75) !important;
+}
+
+body.dark .table td, body.dark .table th {
+    border: 1px solid var(--black-3)
+}
+
+body.dark .table.table-borderless td, body.dark .table.table-borderless th {
+    border: 0 solid var(--black-3) !important
+}
+
+body.dark .table-bordered td, body.dark .table-bordered th {
+    border: 1px solid var(--black-3);
+}
+
+body.dark ::-webkit-scrollbar-track {
+    background: var(--black-1);
+    border-radius: 10px;
+}
+
+body.dark .table.first-freeze tr td:first-child {
+    background: var(--black-1) !important;
+}
+
+body.dark .modal-content {
+    background: var(--black-1) !important;
+}
+
+body.dark .apexcharts-canvas text {
+    fill: var(--white-75) !important;
+}
+
+body.dark .modal-backdrop {
+    background: #fff;
+}
+
+body.dark .apexcharts-canvas line.apexcharts-gridline {
+    stroke: var(--black-3) !important;
+}
+
+body.dark .table.tr-hover tbody tr:hover, body.dark .table.tr-hover.first-freeze tbody tr:hover td:first-child {
+    background: var(--black) !important;
+}
+
+body.dark .form-control {
+    border: 1px solid var(--black-2);
+    background-color: var(--black-1);
+    color: var(--white-75);
+}
+
+body.dark .form-group label {
+    color: var(--white) !important;
+}
+
+body.dark .bg-white {
+    background: var(--black) !important;
+}
+
+body.dark .border-setter .nav-item > a, body.dark .border-setter .nav-item a.nav-link, body.dark .navbar-nav .nav-item i {
+    color: var(--white);
+}
+
+body.dark .bg-secondary {
+    background-color: var(--black-2) !important;
+}
+
+body.dark .border {
+    border: 1px solid var(--black-3);
+}
+
+body.dark .btn.btn-white {
+    color: #fff;
+    background-color: var(--black-1);
+    border-color: var(--black-1);
+}
+
+body.dark .card-header {
+    border-bottom: none;
+    background: #101010 !important;
+}
+
+body.dark table.custom-table tr td:last-child {
+    background: var(--black-1);
+    border-radius: 10px 0 0 10px;
+}
+
+body.dark table.custom-table tr td {
+    background: var(--black-1);
+    padding: 0.5rem;
+}
+
+body.dark table.custom-table tr td:first-child {
+    background: var(--black-1);
+    border-radius: 0 10px 10px 0;
+}
+
+body.dark table.custom-table tbody tr {
+    border: 5px solid var(--black-2);
+}
+
+body.dark table.custom-table thead tr th:first-child {
+    border-right: 2px solid var(--black-2);
+    border-radius: 0 5px 5px 0;
+    background: var(--primary);
+    color: #fff;
+}
+
+body.dark table.custom-table thead tr th:last-child {
+    border-left: 2px solid var(--black-2);
+    border-radius: 5px 0 0 5px;
+    background: var(--primary);
+    color: #fff;
+}
+
+body.dark .d-dark-none {
+    display: none !important;
+}
+
+body.dark .d-dark-visible {
+    display: block !important;
+}
+
+.d-dark-none {
+    display: block !important;
+}
+
+.d-dark-visible {
+    display: none !important;
+}
+
+body.dark .select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid var(--black-3);
+}
+
+body.dark .select2-container--default .select2-dropdown {
+    border: 1px solid var(--black-3);
+}
+
+body.dark .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+    background: var(--black) !important;
+}
+
+body.dark .apexcharts-tooltip.apexcharts-theme-light {
+    border: 1px solid var(--black-3);
+    background: rgba(0, 0, 0, 0.96);
+}
+
+body.dark .tutorial-card .text-primary-hover {
+    color: #5d5dff !important
+}
+
+body.dark .swal2-popup .swal2-content {
+    color: #fff
+}
+
+body.dark a {
+    color: var(--warning);
+}
